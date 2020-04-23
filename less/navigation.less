@@ -2,6 +2,9 @@
 
 .logo {
   font-family: "Indie Flower", cursive;
+  @media (max-width: 500px) {
+    padding-bottom: 1rem;
+  }
 
   a {
     text-decoration: none;
@@ -15,10 +18,16 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 
   a {
     padding: 0 1rem;
     font-size: 1.5rem;
     color: black;
+    @media (max-width: 500px) {
+      padding: 0rem 2.5rem;
+    }
   }
 }

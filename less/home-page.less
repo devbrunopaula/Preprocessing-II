@@ -1,3 +1,6 @@
+.line {
+  border-top: 2px dashed @navigation-border;
+}
 .home {
   .hero {
     h2 {
@@ -14,18 +17,33 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media (max-width: 500px) {
+      flex-direction: column;
+      justify-content: center;
+    }
 
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media (max-width: 500px) {
+        width: 100%;
+        padding: 2rem;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media (max-width: 500px) {
+        width: 100%;
+        padding: 0;
+      }
 
       img {
         border-radius: 10px;
+        @media (max-width: 500px) {
+          width: 100%;
+        }
       }
     }
   }
@@ -48,6 +66,11 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media (max-width: 500px) {
+      width: 100%;
+      margin: 0;
+      padding-bottom: 3rem;
+    }
 
     img {
       border-radius: 10px;
@@ -59,10 +82,27 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 500px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media (max-width: 500px) {
+        margin: 0;
+        width: 90%;
+        padding: 2rem;
+      }
     }
   }
 } // home
+
+@media (max-width: 500px) {
+  .btn {
+    width: 100%;
+    background-color: #2aa2b8;
+  }
+}
