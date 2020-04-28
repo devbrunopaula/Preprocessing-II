@@ -17,3 +17,26 @@
 }
 
 
+.theme (@mode) when (@mode = "dark") {
+  background-color: darkblue;
+  color:white;
+}
+.theme (@mode) when (@mode = "light") {
+  background-color: lightblue;
+  color: black;
+}
+.dark(){
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+  background-color: #1F2429;
+  color: #e2e6ec;
+  nav a{
+    color: #4579bd
+  }
+  .logo a {
+    color:#4579bd;
+  }
+  footer p{
+    color: #e2e6ec;
+  }
+}

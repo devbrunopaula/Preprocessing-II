@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,13 +11,14 @@
       rel="stylesheet"
     />
     <link href="css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
   </head>
 
-  <body class="dark-mode">
+  <body >
     <!-- Navigation -->
     <div class="container">
       <header>
@@ -28,6 +29,15 @@
           <a href="">Blog</a>
           <a href="">Contact</a>
         </nav>
+        <div class="dark-toogle">
+          <input type="checkbox" class="checkbox"  id="chk" />
+          <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
+         </div>
+        
       </header>
     </div>
 
@@ -122,7 +132,7 @@
       </section>
     </div>
     <!-- container -->
-    <button onclick="dark()">Dark</button>
+    
     <footer class="footer">
       <p>Copyright Fun Bus 2018</p>
     </footer>
