@@ -11,6 +11,11 @@
 .dark-toogle {
   position: relative;
 }
+@media (max-width: 500px) {
+  .dark-toogle {
+    padding-top: 1rem;
+  }
+}
 .moon i {
   font-size: 2rem;
   color: #cccccc;
@@ -323,7 +328,7 @@ header a {
 }
 @media (max-width: 500px) {
   header a {
-    padding: 0rem 2.5rem;
+    padding: 0rem 2rem;
   }
 }
 @media ( max-width: 375px ) {
